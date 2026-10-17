@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f5">
+<title>Happy Birthday, Ganavi PG ❤️</title>
+<style>
+  :root{--pink:#f6a9c2;--rose:#d95f87;--deep:#7d3454;--cream:#fff8f4;--lav:#f1e8ff}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--deep);background:linear-gradient(160deg,#fff8f4,#fff0f6 48%,#f7f0ff);overflow-x:hidden}
+  .floaters{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+  .floater{position:absolute;bottom:-50px;opacity:.45;animation:rise linear infinite;font-size:22px}
+  @keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+  .wrap{position:relative;z-index:1;width:min(900px,100%);margin:auto;padding:20px 16px 50px}
+  .hero{text-align:center;padding:48px 18px 34px;border:1px solid #f8cfdd;border-radius:28px;background:rgba(255,255,255,.72);box-shadow:0 18px 55px #d95f8717}
+  .eyebrow{letter-spacing:3px;text-transform:uppercase;font:600 11px Arial,sans-serif;color:var(--rose)}
+  h1{font-size:clamp(2.4rem,9vw,5.4rem);line-height:1.02;margin:16px 0;color:var(--deep);font-weight:normal}
+  h1 span{color:var(--rose);font-style:italic}
+  .subtitle{font:16px/1.7 Arial,sans-serif;max-width:560px;margin:0 auto 22px;color:#86556a}
+  .heart{font-size:42px;display:inline-block;animation:heartbeat 1.5s ease-in-out infinite}
+  @keyframes heartbeat{50%{transform:scale(1.14)}}
+  .btn{border:0;border-radius:999px;padding:14px 22px;background:var(--rose);color:white;font:700 14px Arial,sans-serif;cursor:pointer;box-shadow:0 8px 20px #d95f8733;transition:transform .2s}
+  .btn:active{transform:scale(.97)}
+  .section{margin-top:22px;padding:28px 22px;border-radius:24px;background:rgba(255,255,255,.78);border:1px solid #f8dce5;box-shadow:0 10px 30px #7d34540a}
+  h2{font-size:clamp(1.6rem,6vw,2.35rem);font-weight:normal;text-align:center;margin:0 0 16px}
+  .section p{font:15px/1.85 Arial,sans-serif;color:#805469}
+  .note{text-align:center;font-style:italic!important}
+  .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .photo{aspect-ratio:4/5;border:2px dashed #e9a5bc;border-radius:18px;background:linear-gradient(145deg,#fff0f5,#f8f0ff);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px;overflow:hidden;position:relative}
+  .photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:none}
+  .photo .placeholder{font:13px/1.5 Arial,sans-serif;color:#a05f7a}
+  .photo .emoji{font-size:34px;margin-bottom:8px}
+  .photo input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+  .photo small{font:11px Arial,sans-serif;color:#9a6c80;margin-top:7px}
+  .gallery-tip{text-align:center;font:12px/1.6 Arial,sans-serif;color:#986d80;margin:12px 0 0}
+  .letter{background:linear-gradient(140deg,#fff5f8,#fffaf4);border-radius:20px;padding:22px;border:1px solid #f4d2df}
+  .letter p{white-space:pre-line}
+  .signature{text-align:right;font-style:italic;color:var(--rose);font-size:20px}
+  .hidden-message{display:none;text-align:center;animation:fadeIn .8s ease both}
+  .hidden-message.show{display:block}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  .big-heart{font-size:54px}
+  .confetti{position:fixed;top:-20px;z-index:10;pointer-events:none;animation:fall 3.5s linear forwards}
+  @keyframes fall{to{transform:translateY(110vh) rotate(700deg);opacity:0}}
+  footer{text-align:center;padding:30px 12px 5px;color:#a16c82;font:12px/1.7 Arial,sans-serif}
+  .tiny{font:11px/1.6 Arial,sans-serif;color:#a16c82;text-align:center;margin-top:12px}
+  @media(min-width:650px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:68px 36px 48px}.section{padding:34px}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="floaters" id="floaters" aria-hidden="true"></div>
+<main class="wrap">
+  <header class="hero">
+    <div class="eyebrow">A little page made with a lot of love</div>
+    <div class="heart" aria-hidden="true">♡</div>
+    <h1>Happy Birthday,<br><span>Ganavi PG</span> 🎂</h1>
+    <p class="subtitle">To my friend, my comfort, and the person who feels like a second mother to me. Today is all about you. 💗</p>
+    <button class="btn" onclick="document.getElementById('letter-section').scrollIntoView({behavior:'smooth'})">A little message for you ↓</button>
+  </header>
+
+  <section class="section">
+    <h2>For my Second Mother 🫂</h2>
+    <p class="note">Some people come into our lives and make them softer, safer, and brighter. You are one of those rare people for me.</p>
+    <p>Ganavi, you are more than a friend to me. You care in a way that reminds me of a mother's love — with warmth, patience, kindness, and a heart that makes people feel they matter. I'm grateful that life gave me someone as special as you. 🌷</p>
+  </section>
+
+  <section class="section">
+    <h2>Our little memories 📸</h2>
+    <p class="note">Add your favourite photos together. Tap any frame to choose a photo from your phone.</p>
+    <div class="gallery">
+      <label class="photo"><img alt="Memory photo 1"><span class="placeholder"><span class="emoji">🌸</span><br>Our favourite memory<small>Tap to add photo</small></span><input type="file" accept="image/*" aria-label="Choose memory photo one" onchange="loadPhoto(this)"></label>
+      <label class="photo"><img alt="Memory photo 2"><span class="placeholder"><span class="emoji">🩷</span><br>A moment to remember<small>Tap to add photo</small></span><input type="file" accept="image/*" aria-label="Choose memory photo two" onchange="loadPhoto(this)"></label>
+      <label class="photo"><img alt="Memory photo 3"><span class="placeholder"><span class="emoji">🦋</span><br>A smile I love<small>Tap to add photo</small></span><input type="file" accept="image/*" aria-label="Choose memory photo three" onchange="loadPhoto(this)"></label>
+    </div>
+    <p class="gallery-tip">Your selected photos stay on your device while you view this page. To include photos for everyone who visits the published website, add the image files to the website folder and update the HTML.</p>
+  </section>
+
+  <section class="section" id="letter-section">
+    <h2>A letter from my heart 💌</h2>
+    <div class="letter">
+      <p>Dear Ganavi PG,
+
+Happy Birthday to my Second Mother! 🥹❤️
+
+Thank you for being someone I can care about so deeply, someone whose presence brings comfort, and someone who makes friendship feel like family. Your kindness means more to me than I can fully explain.
+
+I hope this new year of your life brings you peaceful days, genuine smiles, good health, beautiful surprises, and all the love you so freely give to others. Whenever life feels difficult, I hope you remember how precious you are and how many people are lucky to have you.
+
+I may not always find the perfect words, but please know this: you have a very special place in my heart. Thank you for being you. May your smile stay bright today and always. 🌷🫂
+
+With lots of love,</p>
+      <div class="signature">Your forever grateful friend ❤️</div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center">
+    <h2>One last little surprise… 🎁</h2>
+    <p class="note">There's something I want you to remember, today and every day.</p>
+    <button class="btn" id="revealBtn" onclick="revealSurprise()">Open your surprise 💝</button>
+    <div class="hidden-message" id="surprise">
+      <div class="big-heart">💖</div>
+      <h2>You are family to me.</h2>
+      <p>Not by name, but by the love and care you give. I'm wishing you a birthday as beautiful as your heart, Ganavi. Happy Birthday, my Second Mother! 🎂🌸🫂</p>
+      <p><strong>You deserve so much happiness. Always remember that. ❤️</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    Made especially for Ganavi PG, with love. 💗<br>
+    <span id="birthdayDate">18 October 2026</span> · No music, just heartfelt wishes.
+  </footer>
+</main>
+<script>
+  // Decorative floating hearts and flowers
+  const floaters = document.getElementById('floaters');
+  const symbols = ['♡','♥','✿','🌸','✨'];
+  for (let i=0;i<18;i++){
+    const el=document.createElement('span');
+    el.className='floater';
+    el.textContent=symbols[i%symbols.length];
+    el.style.left=(Math.random()*100)+'%';
+    el.style.animationDuration=(10+Math.random()*13)+'s';
+    el.style.animationDelay=(-Math.random()*18)+'s';
+    el.style.fontSize=(14+Math.random()*16)+'px';
+    floaters.appendChild(el);
+  }
+  function loadPhoto(input){
+    const file=input.files && input.files[0];
+    if(!file) return;
+    if(!file.type.startsWith('image/')) return;
+    const box=input.closest('.photo');
+    const img=box.querySelector('img');
+    const url=URL.createObjectURL(file);
+    img.src=url;
+    img.style.display='block';
+    box.querySelector('.placeholder').style.display='none';
+  }
+  function revealSurprise(){
+    const surprise=document.getElementById('surprise');
+    surprise.classList.add('show');
+    document.getElementById('revealBtn').textContent='Surprise opened ❤️';
+    document.getElementById('revealBtn').disabled=true;
+    const colors=['#f6a9c2','#d95f87','#c8b2f0','#f7d58b','#f7efff'];
+    for(let i=0;i<65;i++){
+      const bit=document.createElement('span');
+      bit.className='confetti';
+      bit.textContent=['♥','✿','✨','♡'][Math.floor(Math.random()*4)];
+      bit.style.left=(Math.random()*100)+'vw';
+      bit.style.color=colors[Math.floor(Math.random()*colors.length)];
+      bit.style.fontSize=(12+Math.random()*17)+'px';
+      bit.style.animationDelay=(Math.random()*.8)+'s';
+      document.body.appendChild(bit);
+      setTimeout(()=>bit.remove(),4500);
+    }
+  }
+</script>
+</body>
+</html>
